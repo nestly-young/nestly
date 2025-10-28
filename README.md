@@ -39,7 +39,7 @@ git commit -m "Initial commit: Nestly legal documents"
 ### 第三步：推送到GitHub
 
 ```bash
-git remote add origin https://github.com/welcome-young/nestly-webinfo.git
+git remote add origin https://github.com/nestly-young/nestly-webinfo.git
 git branch -M main
 git push -u origin main
 ```
@@ -53,17 +53,17 @@ git push -u origin main
 5. 点击 **Save**
 6. 等待几分钟，页面会显示：
    ```
-   Your site is published at https://welcome-young.github.io/nestly-webinfo/
+   Your site is published at https://nestly-young.github.io/nestly-webinfo/
    ```
 
 ## 🌐 访问地址
 
 部署成功后，你的法律文档将在以下地址访问：
 
-- **主页：** https://welcome-young.github.io/nestly-webinfo/
-- **隐私政策：** https://welcome-young.github.io/nestly-webinfo/privacy-policy.html
-- **服务条款：** https://welcome-young.github.io/nestly-webinfo/terms-of-service.html
-- **订阅条款：** https://welcome-young.github.io/nestly-webinfo/subscription-terms.html
+- **主页：** https://nestly-young.github.io/nestly-webinfo/
+- **隐私政策：** https://nestly-young.github.io/nestly-webinfo/privacy-policy.html
+- **服务条款：** https://nestly-young.github.io/nestly-webinfo/terms-of-service.html
+- **订阅条款：** https://nestly-young.github.io/nestly-webinfo/subscription-terms.html
 
 ## 📝 在App Store Connect中填写
 
@@ -71,12 +71,12 @@ git push -u origin main
 
 1. **Privacy Policy URL（隐私政策URL）：**
    ```
-   https://welcome-young.github.io/nestly-webinfo/privacy-policy.html
+   https://nestly-young.github.io/nestly-webinfo/privacy-policy.html
    ```
 
 2. **Terms of Service URL（服务条款URL，可选）：**
    ```
-   https://welcome-young.github.io/nestly-webinfo/terms-of-service.html
+   https://nestly-young.github.io/nestly-webinfo/terms-of-service.html
    ```
 
 ## 🔄 更新文档
@@ -121,7 +121,7 @@ dependencies:
 import 'package:url_launcher/url_launcher.dart';
 
 Future<void> _showPrivacyPolicy() async {
-  final url = Uri.parse('https://welcome-young.github.io/nestly-webinfo/privacy-policy.html');
+  final url = Uri.parse('https://nestly-young.github.io/nestly-webinfo/privacy-policy.html');
   if (await canLaunchUrl(url)) {
     await launchUrl(
       url,
@@ -154,7 +154,7 @@ Future<void> _showLegalDocument(LegalDocumentType type) async {
 }
 
 Uri _getDocumentUrl(LegalDocumentType type) {
-  const baseUrl = 'https://welcome-young.github.io/nestly-webinfo';
+  const baseUrl = 'https://nestly-young.github.io/nestly-webinfo';
   switch (type) {
     case LegalDocumentType.privacyPolicy:
       return Uri.parse('$baseUrl/privacy-policy.html');
@@ -184,8 +184,8 @@ Uri _getDocumentUrl(LegalDocumentType type) {
 ## 📞 联系方式
 
 - **邮箱：** 450861294@qq.com
-- **开发者：** welcome-young
-- **GitHub：** https://github.com/welcome-young/nestly
+- **开发者：** nestly-young
+- **GitHub：** https://github.com/nestly-young/nestly
 
 ## 📄 许可证
 
