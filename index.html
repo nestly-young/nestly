@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nestly - 智能物品管理应用 | 法律文档中心">
+  <title>Nestly - 法律文档中心</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      border: none;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0;
+      opacity: 0.95;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: var(--primary-color);
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: var(--link-color);
+    }
+
+    .features {
+      background: var(--secondary-bg);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 12px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success-color);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .quick-links a {
+      padding: 12px 24px;
+      background: var(--secondary-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .quick-links a:hover {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>📦 Nestly</h1>
+    <p>智能物品管理应用</p>
+    <p>用AI让物品管理更简单</p>
+  </div>
+
+  <main>
+    <section>
+      <h2 style="text-align: center;">法律文档中心</h2>
+      <p style="text-align: center; color: #666;">欢迎访问Nestly法律文档中心。在这里您可以了解我们的隐私政策、服务条款和订阅服务详情。</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🔒</div>
+          <h3>隐私政策</h3>
+          <p>了解我们如何收集、使用和保护您的个人信息。我们承诺保护您的隐私安全。</p>
+          <a href="privacy-policy.html">查看详情</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📜</div>
+          <h3>服务条款</h3>
+          <p>查看使用Nestly应用的规则和条件，以及您的权利和义务。</p>
+          <a href="terms-of-service.html">查看详情</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>订阅服务条款</h3>
+          <p>了解订阅计划、定价、自动续费和退款政策的详细信息。</p>
+          <a href="subscription-terms.html">查看详情</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>关于 Nestly</h2>
+      <p>Nestly是一款智能物品管理应用，帮助您轻松管理和查找物品。</p>
+
+      <h3>核心功能</h3>
+      <ul>
+        <li>🎤 智能语音录入 - 快速记录物品信息</li>
+        <li>🔍 AI智能搜索 - 快速找到您需要的物品</li>
+        <li>☁️ 云端同步 - 多设备数据实时同步</li>
+        <li>📸 照片管理 - 为物品添加图片</li>
+        <li>🏷️ 智能分类 - 自动整理物品</li>
+        <li>🔐 数据加密 - 保护您的隐私安全</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 style="text-align: center;">快速链接</h2>
+      <div class="quick-links">
+        <a href="privacy-policy.html">隐私政策</a>
+        <a href="terms-of-service.html">服务条款</a>
+        <a href="subscription-terms.html">订阅条款</a>
+        <a href="mailto:450861294@qq.com">联系我们</a>
+        <a href="https://github.com/welcome-young/nestly" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2>联系信息</h2>
+      <ul>
+        <li>📧 邮箱：<a href="mailto:450861294@qq.com">450861294@qq.com</a></li>
+        <li>👨‍💻 开发者：welcome-young</li>
+        <li>🌐 GitHub：<a href="https://github.com/welcome-young/nestly" target="_blank">welcome-young/nestly</a></li>
+      </ul>
+    </section>
+
+    <section style="background: #E3F2FD; padding: 25px; border-radius: 12px; margin-top: 40px;">
+      <h3 style="margin-top: 0; color: var(--primary-color);">iOS审核说明</h3>
+      <p>本网站托管了Nestly应用的所有法律文档，符合Apple App Store审核要求。所有文档内容真实、完整、准确。</p>
+      <ul style="margin-bottom: 0;">
+        <li>✅ 真实的联系方式</li>
+        <li>✅ 完整的隐私政策</li>
+        <li>✅ 详细的服务条款</li>
+        <li>✅ 清晰的订阅说明</li>
+        <li>✅ 透明的第三方服务披露</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nestly by welcome-young. All rights reserved.</p>
+    <p>
+      <a href="privacy-policy.html">隐私政策</a> |
+      <a href="terms-of-service.html">服务条款</a> |
+      <a href="subscription-terms.html">订阅条款</a> |
+      <a href="mailto:450861294@qq.com">联系我们</a>
+    </p>
+    <p style="margin-top: 15px; font-size: 12px; color: #999;">
+      Last updated: January 1, 2025
+    </p>
+  </footer>
+</body>
+</html>
